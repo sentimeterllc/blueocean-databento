@@ -1,0 +1,10 @@
+# Runtime dependencies. See README.md for what each one is for.
+databento>=0.34        # batch API client + DBN reader (pulls in pyarrow, pandas, numpy)
+duckdb>=1.0            # in-process SQL over Parquet: merge shards, sort once
+psycopg2-binary>=2.9   # PostgreSQL driver for the trading-calendar lookup
+requests>=2.31         # streaming download of the signed shard URLs
+python-dotenv>=1.0     # .env loading in development (optional at runtime)
+
+# Development
+# pytest>=8.0
+# ruff>=0.5

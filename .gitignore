@@ -1,0 +1,29 @@
+# Secrets
+.env
+*.pem
+*.key
+
+# Data — never commit the lake or raw vendor shards
+*.parquet
+*.dbn
+*.dbn.zst
+data/
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
